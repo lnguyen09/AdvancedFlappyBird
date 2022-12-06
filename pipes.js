@@ -14,11 +14,13 @@ export function setupPipes(diffLevel) {
         PIPE_SPEED = 0.6
         PIPE_INTERVAL = 1400
         HOLE_HEIGHT = 200
+        PIPE_WIDTH = 100
     }
     else if (diffLevel === "Hard") {
         PIPE_SPEED = 0.6
         PIPE_WIDTH = Math.random() * (3000 - 100) + 100
         PIPE_INTERVAL = PIPE_WIDTH / PIPE_SPEED + 500
+        HOLE_HEIGHT = 250
     }
     else {
         HOLE_HEIGHT = 250
